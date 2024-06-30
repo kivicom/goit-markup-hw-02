@@ -74,14 +74,14 @@ header .nav-list {
     letter-spacing: 0.02em;
 }
 
-header .item-link{
+header .nav-link{
     color: var(--navy-blue);
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
 
-header .item-link:hover,
-header .item-link:focus {
+header .nav-link:hover,
+header .nav-link:focus {
     color: var(--ocean);
 }
 
