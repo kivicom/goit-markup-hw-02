@@ -88,16 +88,13 @@ header .nav-link:focus {
 .address {
     font-style: normal;
 }
-.address .address-item .mail,
-.address .address-item .tel{
+.address .address-item .link{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.address-item .mail:hover,
-.address-item .mail:focus,
-.address-item .tel:hover,
-.address-item .tel:focus{
+.address-item .link:hover,
+.address-item .link:focus{
     color: var(--ocean);
 }
 
