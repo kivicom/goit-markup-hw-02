@@ -38,7 +38,6 @@ button{
     color: var(--white);
     font-weight: 500;
     background-color: var(--iris);
-    padding: 16px, 32px;
     cursor: pointer;
     border: none;
     line-height: 1.5;
@@ -48,6 +47,9 @@ button{
 .item-title {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
 }
 .visually-hidden {
     position: absolute;
@@ -55,7 +57,6 @@ button{
     height: 1px;
     margin: -1px;
     border: 0;
-    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -86,6 +87,7 @@ header .nav-list {
 header .item-link{
     color: var(--navy-blue);
     letter-spacing: 0.02em;
+    line-height: 1.5;
 }
 
 header .item-link:hover,
@@ -96,23 +98,19 @@ header .item-link:focus {
 .address {
     font-style: normal;
 }
+.address .address-item .mail,
+.address .address-item .tel{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
 
-.address-item:hover{
+.address-item .mail:hover,
+.address-item .tel:hover{
     color: var(--ocean);
 }
 
-/* about */
-
-.about .section-title{
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-}
-.about .item .descr{
-    letter-spacing: 0.02em
-}
-
 /* Hero */
-#hero{
+.hero{
     background-color: var(--navy-blue);
     text-align: center;
 }
@@ -124,12 +122,20 @@ header .item-link:focus {
     color: var(--white);
 }
 
-.hero-btn{
-    padding: 16px 32px;
+.hero-btn:hover, .hero-btn:focus{
+    background-color: var(--ocean);
 }
 
-.hero-btn:hover {
-    background-color: var(--ocean);
+/* about */
+
+.about .section-title {
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.about .item .descr {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* team */
@@ -148,12 +154,14 @@ header .item-link:focus {
     background-color: var(--white);
 }
 .team .list-item .item-title{
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
 }
 .item .list-item .descr{
+    line-height: 1.5;
     font-size: 16px;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
 }
 
 /* portfolio */
@@ -166,10 +174,12 @@ header .item-link:focus {
     text-transform: capitalize;
 }
 .portfolio .item-title{
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
 }
 .portfolio .descr{
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
