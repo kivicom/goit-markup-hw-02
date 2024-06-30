@@ -18,7 +18,6 @@ body{
     font-size: 16px;
     color: var(--slate);
     background-color: var(--white);
-    line-height: 24px;
 }
 
 ul,
@@ -37,12 +36,13 @@ a {
 
 button{
     color: var(--white);
+    font-weight: 500;
     background-color: var(--iris);
     padding: 16px, 32px;
     cursor: pointer;
-}
-button:hover {
-    background-color: var(--ocean);
+    border: none;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .item-title {
@@ -66,7 +66,7 @@ button:hover {
         sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--iris);
     text-transform: uppercase;
@@ -83,12 +83,17 @@ header .nav-list {
     letter-spacing: 0.02em;
 }
 
-header .nav-item:hover,
-header .nav-item:focus {
-    color: #404bbf;
+header .item-link{
+    color: var(--navy-blue);
+    letter-spacing: 0.02em;
 }
 
-address {
+header .item-link:hover,
+header .item-link:focus {
+    color: var(--ocean);
+}
+
+.address {
     font-style: normal;
 }
 
@@ -96,15 +101,90 @@ address {
     color: var(--ocean);
 }
 
-/* Hero */
-.hero-title{
-    font-size: 56px;
-    line-height: 60px;
-    text-align: center;
+/* about */
+
+.about .section-title{
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+.about .item .descr{
+    letter-spacing: 0.02em
 }
 
+/* Hero */
+#hero{
+    background-color: var(--navy-blue);
+    text-align: center;
+}
+.hero-title{
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-btn{
+    padding: 16px 32px;
+}
+
+.hero-btn:hover {
+    background-color: var(--ocean);
+}
+
+/* team */
+.team{
+    background-color: var(--cloud);
+}
+.team .section-title{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue);
+}
+.team .list-item{
+    background-color: var(--white);
+}
+.team .list-item .item-title{
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+.item .list-item .descr{
+    font-size: 16px;
+    letter-spacing: 0.02em
+}
+
+/* portfolio */
+.portfolio-title{
+    color: var(--navy-blue);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.portfolio .item-title{
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+.portfolio .descr{
+    letter-spacing: 0.02em;
+}
 
 /* footer */
-footer .logo-accent {
-    color: var(--white);
+.footer{
+    background-color: var(--navy-blue);
+}
+.footer .logo{
+    line-height: 1.17;
+}
+.footer .logo-accent {
+    color: var(--cloud);
+}
+.footer .descr{
+    line-height: 1.5;
+    color: var(--cloud);
+    letter-spacing: 0.02em;
 }
